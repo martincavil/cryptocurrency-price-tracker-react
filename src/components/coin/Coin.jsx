@@ -7,7 +7,7 @@ export default function Coin({ name, image, symbol, price, volume}) {
       <div className="coinRow">
         <div className="coin">
           <img src={image} alt="crypto" />
-          <h1>Name</h1>
+          <h1>{name}</h1>
           <p className='coinSymbol'>{symbol}</p>
         </div>
         <div className="coinData">
