@@ -6,12 +6,12 @@ export default function Coin() {
       <div className="coinRow">
         <div className="coin">
           <img src={image} alt="crypto" />
-          <h1>{name}</h1>
+          <h1></h1>
           <p className='coinSymbol'>{symbol}</p>
         </div>
         <div className="coinData">
           <p className='coinPrice'>{price}</p>
-          <p className='coinVolum'>{volume.}</p>
+          <p className='coinVolum'>{volume}</p>
         </div>
       </div>
     </div>
