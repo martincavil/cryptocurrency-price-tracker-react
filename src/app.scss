@@ -1,4 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  background-color: #141416;
+  color: white;
+}
+
+.app {
+  font-family: 'Lato', sans-serif;
+  .coinApp {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .coinSearch {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin: 20px auto;
+
+      h1 {
+        color: lightgray;
+      }
+
+      input {
+        border: 1px solid lightgray;
+        border-radius: 12px;
+        padding: 10px 20px;
+
+        &::placeholder {
+          color: lightgray;
+        }
+      }
+    }
+  }
 }
