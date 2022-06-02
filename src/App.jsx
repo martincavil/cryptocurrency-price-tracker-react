@@ -30,11 +30,11 @@ function App() {
     <div className="app">
       <div className="coinApp">
         <div className="coinSearch">
-          <h1 className='cointText'>Search a cryptocurrency</h1>
+          <h1 className='cointText'>Cryptocurrencies List</h1>
           <form >
             <input
               type="text"
-              placeholder='Search'
+              placeholder='Search a coin'
               className='coinInput'
               onChange={handleChange}/>
           </form>
