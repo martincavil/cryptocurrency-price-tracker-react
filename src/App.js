@@ -12,13 +12,18 @@ function App() {
     axios.get(urlAPI)
     .then(res => {
       setCoins(res.data);
-      console.log(res.data);
-    });
-  });
+    }).catch((error => console.log('url API Error')));
+  }, []);
 
 
   return (
-    <div className="app"></div>
+    <div className="app">
+      <div className="coinApp">
+        <div className="coinSearch">
+          <h1 className='cointText'>Search a cryptocurrency</h1>
+        </div>
+      </div>
+    </div>
   );
 }
 
