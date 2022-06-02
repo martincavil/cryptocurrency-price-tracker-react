@@ -21,6 +21,13 @@ function App() {
       <div className="coinApp">
         <div className="coinSearch">
           <h1 className='cointText'>Search a cryptocurrency</h1>
+          <form >
+            <input
+              type="text"
+              placeholder='Search'
+              className='coinInput'
+            />
+          </form>
         </div>
       </div>
     </div>
