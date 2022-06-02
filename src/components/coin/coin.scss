@@ -1,0 +1,64 @@
+.coinContainer {
+  width: 100%;
+  margin: 15px auto;
+
+  .coinRow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .coin {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 30%;
+
+      img {
+        width: 25px;
+        height: 25px;
+        padding: 1px;
+        background-color: #fff;
+        border-radius: 50%;
+      }
+
+      h1 {
+        font-size: 20px;
+        margin: 0 10px;
+        width: 200px;
+
+      }
+
+      .coinSymbol {
+        color: rgb(134, 133, 133);
+      }
+    }
+
+    .coinData {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 70%;
+
+      .coinPrice {
+        width: 20px;
+      }
+
+      .coinVolume {
+        width: 20px;
+
+      }
+
+      .coinPercent {
+        width: 20px;
+
+        &.red {
+          color: red;
+        }
+
+        &.green {
+          color: rgb(0, 255, 0);
+        }
+      }
+    }
+  }
+}

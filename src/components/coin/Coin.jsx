@@ -12,16 +12,18 @@ export default function Coin({ name, image, symbol, price, volume, priceChange, 
         </div>
         <div className="coinData">
           <p className='coinPrice'>${price.toLocaleString()}</p>
-          <p className='coinVolum'>${volume.toLocaleString()}</p>
+          <p className='coinVolume'>${volume}</p>
           {priceChange < 0 ? (
             <p className='coinPercent red'>
               {priceChange.toFixed(2)}%
             </p>
-          ) : <p className='coinPercent green'>
-          {priceChange.toFixed(2)}%
-        </p>}
-        <p className='coinMerketCap'>
-          Mkt Cap: ${marketCap.toLocaleString()}
+          ) :
+            <p className='coinPercent green'>
+              {priceChange.toFixed(2)}%
+            </p>
+          }
+        <p className='coinMarketCap'>
+          Mkt Cap: ${marketCap / 1000000}M
         </p>
         </div>
       </div>
