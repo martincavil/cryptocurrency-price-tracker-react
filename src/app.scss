@@ -22,9 +22,22 @@
       justify-content: space-between;
       width: 100%;
       margin: 20px auto;
+      @media screen and (max-width: 768px){
+        flex-direction: column;
+
+      }
+      @media screen and (max-width: 492px){
+        flex-direction: column;
+      }
 
       h1 {
         color: lightgray;
+        @media screen and (max-width: 768px){
+          margin: 20px auto;
+        }
+        @media screen and (max-width: 492px){
+          margin: 20px auto;
+        }
       }
 
       input {
@@ -46,6 +59,33 @@
       margin: 20px 0;
       margin-left: 30%;
       font-weight: 700;
+      color: lightgray;
+
+      @media screen and (max-width: 768px){
+        width: 60%;
+        margin-left: 40%;
+
+      }
+      @media screen and (max-width: 492px){
+        width: 50%;
+        margin-left: 50%;
+
+      }
+
+      .descVolume {
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+        @media screen and (max-width: 492px){
+          display: none;
+        }
+      }
+
+      .descMarketCap {
+        @media screen and (max-width: 492px){
+          display: none;
+        }
+      }
     }
   }
 }

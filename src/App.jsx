@@ -8,7 +8,7 @@ function App() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState('');
 
-  const APICOINGEKCO = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false';
+  const APICOINGEKCO = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=500&page=1&sparkline=false';
 
   useEffect(() => {
     axios.get(APICOINGEKCO)
@@ -42,7 +42,7 @@ function App() {
         <div className="dataDesc">
           <div className="descPrice">Current Price</div>
           <div className="descVolume">Volume</div>
-          <div className="desc24hChange">24h Change</div>
+          <div className="desc24hChange">24h</div>
           <div className="descMarketCap">Market Cap.</div>
       </div>
         {filteredCoins.map(coin => {
