@@ -46,6 +46,13 @@
         padding: 10px 20px;
         width: auto;
 
+        @media screen and (max-width: 768px){
+          text-align: center;
+        }
+        @media screen and (max-width: 492px){
+          text-align: center;
+        }
+
         &::placeholder {
           color: lightgray;
         }
