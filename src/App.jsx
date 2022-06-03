@@ -39,6 +39,12 @@ function App() {
               onChange={handleChange}/>
           </form>
         </div>
+        <div className="dataDesc">
+          <div className="descPrice">Current Price</div>
+          <div className="descVolume">Volume</div>
+          <div className="desc24hChange">24h Change</div>
+          <div className="descMarketCap">Market Cap.</div>
+      </div>
         {filteredCoins.map(coin => {
           return (
             <Coin
