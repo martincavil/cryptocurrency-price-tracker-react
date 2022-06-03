@@ -13,6 +13,15 @@
       align-items: center;
       justify-content: flex-start;
       width: 30%;
+      margin-right: 20px;
+
+
+      @media screen and (max-width: 768px){
+        width: 40%;
+      }
+      @media screen and (max-width: 492px){
+        width: 50%;
+      }
 
       img {
         width: 30px;
@@ -40,13 +49,26 @@
       justify-content: space-between;
       width: 70%;
 
+      @media screen and (max-width: 768px){
+        width: 60%;
+      }
+      @media screen and (max-width: 492px){
+        width: 50%;
+
+      }
+
       .coinPrice {
         width: 20px;
       }
 
       .coinVolume {
         width: 20px;
-
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+        @media screen and (max-width: 492px){
+          display: none;
+        }
       }
 
       .coinPercent {
@@ -58,6 +80,12 @@
 
         &.green {
           color: rgb(0, 255, 0);
+        }
+      }
+
+      .coinMarketCap {
+        @media screen and (max-width: 492px){
+          display: none;
         }
       }
     }
