@@ -1,4 +1,4 @@
-# A crytpocurrency App
+# A cryptocurrencies App
 
 I created this React App just to improve my skills in React.
 
