@@ -26,6 +26,9 @@ function App() {
     coin.name.toLowerCase().includes(search.toLowerCase())
     )
 
+
+
+
   return (
     <div className="app">
       <div className="coinApp">
@@ -62,5 +65,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
